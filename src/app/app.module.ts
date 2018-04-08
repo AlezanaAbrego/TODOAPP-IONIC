@@ -6,20 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { TasksPage} from '../pages/tasks/tasks';
+import { DatePickerModule } from 'ion-datepicker';
+import { IonicStorageModule } from '@ionic/storage';
+import { Storage } from '@ionic/storage';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    TasksPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    DatePickerModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    TasksPage
   ],
   providers: [
     StatusBar,

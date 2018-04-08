@@ -1,3 +1,10 @@
 page-home {
 
+    ion-item-options .button{
+        height: 60px !important;
+    }
+    ion-item-options .button:last-child {
+        padding-right: 0.0em !important;
+    }
+
 }
